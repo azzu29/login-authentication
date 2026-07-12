@@ -1,0 +1,206 @@
+<!doctype html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      body {
+        background-color: #fafafa; /* A soft, premium purple */
+        margin: 0;
+        padding: 0;
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        background: linear-gradient(135deg, #7e22ce, #4c1d95);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+
+      ul li a {
+        display: block;
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        text-align: center;
+      }
+      li a:hover {
+        background-color: #00f5d4;
+        color: black;
+      }
+
+      .card-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        max-width: 1200px;
+        margin: auto;
+        padding: 20px;
+      }
+
+      .card {
+        background-color: #ffffff;
+        border-radius: 20px;
+        overflow: hidden;
+        text-align: center;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+        font-family: arial;
+      }
+
+      /* Hover for the card background. */
+      .card:hover {
+        box-shadow: 0 15px 30px rgba(255, 0, 127, 0.3); /* Electric pink glow */
+        transform: translateY(-5px);
+      }
+
+      .card img {
+        width: 100px;
+        height: 250px;
+        object-position: top;
+        cursor: pointer;
+        border-radius: 15px;
+      }
+
+      .title {
+        color: #ff007f;
+        font-size: 18px;
+      }
+
+      button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background-color: #ff007f;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 18px;
+      }
+
+      a {
+        text-decoration: none;
+        font-size: 22px;
+        color: black;
+      }
+
+      button:hover,
+      a:hover {
+        background-color: #00f5d4;
+        color: black;
+      }
+
+      button,
+      a,
+      li a {
+        transition: all 0.3s ease; /* It makes the transition smooth */
+      }
+
+      footer {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#contact">CEOs & Founders</a></li>
+      <li><a href="#about">Contact</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+
+    <h2 style="text-align: center">CEO's Profile Card</h2>
+
+    <div class="card-container">
+      <div class="card">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6OWPNXjjRfV0Akc6z6nB434n0ep7VIxV2HVSB8_LXjNYIucrP74tREKo&s=10"
+          alt="John"
+          style="width: 100%"
+        />
+        <h1 id="name1"></h1>
+        <p id="company1" class="title"></p>
+        <p id="university1"></p>
+        <div style="margin: 24px 0">
+          <a href="#"><i class="fa fa-dribbble"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-facebook"></i></a>
+        </div>
+        <p><button>Contact</button></p>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPZ9-_wyU3iZuuWsUArDeStdGilSPqM6Fj2MKvGVOEM3UiPgCav_JfTcs&s=10"
+          alt="John"
+          style="width: 100%"
+        />
+        <h1 id="name2"></h1>
+        <p class="title" id="company2"></p>
+        <p id="university2"></p>
+        <div style="margin: 24px 0">
+          <a href="#"><i class="fa fa-dribbble"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-facebook"></i></a>
+        </div>
+        <p><button>Contact</button></p>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://assets.bizclikmedia.net/668/05659d67b129e72496889b970d608f04:cddd0b55886008c4d3c71a87f47cb19b/107196499-1676648872393-gettyimages-1127480489-new-work-summit.webp"
+          alt="John"
+          style="width: 100%"
+        />
+        <h1 id="name3"></h1>
+        <p class="title" id="company3"></p>
+        <p id="university3"></p>
+        <div style="margin: 24px 0">
+          <a href="#"><i class="fa fa-dribbble"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-facebook"></i></a>
+        </div>
+        <p><button>Contact</button></p>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://i.insider.com/5cbf7c6c2730ca37b6174921?width=700"
+          alt="John"
+          style="width: 100%"
+        />
+        <h1 id="name4"></h1>
+        <p class="title" id="company4"></p>
+        <p id="university4"></p>
+        <div style="margin: 24px 0">
+          <a href="#"><i class="fa fa-dribbble"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-facebook"></i></a>
+        </div>
+        <p><button>Contact</button></p>
+      </div>
+    </div>
+
+    <footer><h4>~ Here's the footer ~</h4></footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
