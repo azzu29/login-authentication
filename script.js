@@ -34,6 +34,12 @@ fetch("ceos.json")
       data[3].company4;
     document.getElementById("university4").innerHTML =
       data[3].university4;
+
+    document.getElementById("logoutBtn").addEventListener("click", function(e) {
+
+    e.preventDefault();
+
+    window.location.href = "index.html";
 });
 
 
