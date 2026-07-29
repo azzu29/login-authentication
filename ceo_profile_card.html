@@ -18,7 +18,8 @@
         padding: 0;
         overflow: hidden;
         display: flex;
-        justify-content: flex-start;
+        justify-content: center;
+        align-items: center;
         background: linear-gradient(135deg, #7e22ce, #4c1d95);
         position: sticky;
         top: 0;
@@ -113,7 +114,8 @@
         text-align: center;
       }
       .logout {
-        margin-left: auto;
+        position: absolute;
+        right: 20px;
       }
     </style>
   </head>
@@ -124,7 +126,10 @@
       <li><a href="#contact">CEOs & Founders</a></li>
       <li><a href="#about">Contact</a></li>
       <li><a href="#about">About</a></li>
-      <li class="logout"><a href="#" id="logoutBtn">Logout</a></li>
+    
+      <li class="logout">
+    <a href="#" id="logoutBtn">Logout</a>
+</li>
     </ul>
 
     <h2 style="text-align: center">CEO's Profile Card</h2>
