@@ -5,6 +5,7 @@
 
 //    window.location.href = "ceo_profile_card.html";
 //  });
+
 document.getElementById("loginForm").addEventListener("submit", function(e) {
     e.preventDefault();
 
@@ -21,12 +22,17 @@ document.getElementById("loginForm").addEventListener("submit", function(e) {
             );
 
             if (user) {
-                window.location.href = "ceo_profile_card.html";
+
+                sessionStorage.setItem("loggedIn", "true");
+
+                window.location.replace("ceo_profile_card.html");
+
             } else {
+
                 document.getElementById("error").innerText =
                     "Invalid Email or Password";
+
             }
 
         });
 });
-
