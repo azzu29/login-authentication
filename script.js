@@ -1,3 +1,8 @@
+if (sessionStorage.getItem("loggedIn") !== "true") {
+    window.location.replace("index.html");
+}
+
+
 fetch("ceos.json")
   .then(response => response.json())
   .then(data => {
@@ -39,6 +44,8 @@ fetch("ceos.json")
 
 document.getElementById("logoutBtn").addEventListener("click", function(e) {
     e.preventDefault();
-    window.location.href = "index.html";
-});
 
+    sessionStorage.removeItem("loggedIn");
+
+    window.location.replace("index.html");
+});
