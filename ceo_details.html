@@ -1,0 +1,583 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Satya Nadella - CEO Profile</title>
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+
+  <style>
+
+    body {
+      background-color: #fafafa;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+
+    /* =========================
+       NAVIGATION BAR
+       ========================= */
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      background: linear-gradient(135deg, #7e22ce, #4c1d95);
+
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+
+    ul li a {
+      display: block;
+      color: white;
+
+      padding: 14px 16px;
+
+      text-decoration: none;
+      text-align: center;
+
+      transition: all 0.3s ease;
+    }
+
+
+    li a:hover {
+      background-color: #00f5d4;
+      color: black;
+    }
+
+
+    .logout {
+      position: absolute;
+      right: 20px;
+    }
+
+
+    /* =========================
+       CEO DETAIL PAGE
+       ========================= */
+
+    .detail-container {
+
+      max-width: 900px;
+
+      margin: 40px auto;
+
+      padding: 20px;
+    }
+
+
+    /* BACK TO CEO PAGE */
+
+    .back-btn {
+
+      display: inline-block;
+
+      margin-bottom: 20px;
+
+      color: #4c1d95;
+
+      font-size: 16px;
+
+      font-weight: bold;
+
+      text-decoration: none;
+
+      cursor: pointer;
+    }
+
+
+    .back-btn:hover {
+
+      color: #ff007f;
+
+      background-color: transparent;
+    }
+
+
+    /* =========================
+       DETAIL CARD
+       ========================= */
+
+    .detail-card {
+
+      background-color: #ffffff;
+
+      border-radius: 20px;
+
+      box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.1);
+
+      padding: 40px;
+
+      display: flex;
+
+      flex-direction: column;
+
+      align-items: center;
+
+      text-align: center;
+    }
+
+
+    /* CEO IMAGE */
+
+    .detail-img {
+
+      width: 180px;
+
+      height: 180px;
+
+      border-radius: 50%;
+
+      object-fit: cover;
+
+      object-position: top;
+
+      margin-bottom: 20px;
+
+      box-shadow:
+        0 4px 10px rgba(0, 0, 0, 0.15);
+    }
+
+
+    /* CEO NAME */
+
+    .detail-card h1 {
+
+      margin: 0;
+
+      color: #222;
+
+      font-size: 32px;
+    }
+
+
+    /* COMPANY */
+
+    .title {
+
+      color: #ff007f;
+
+      font-size: 20px;
+
+      font-weight: bold;
+
+      margin: 8px 0;
+    }
+
+
+    /* UNIVERSITY */
+
+    .university {
+
+      color: #666;
+
+      font-size: 16px;
+
+      margin-bottom: 20px;
+    }
+
+
+    /* =========================
+       ABOUT SECTION
+       ========================= */
+
+    .bio-section {
+
+      background: #f8f9fa;
+
+      padding: 20px;
+
+      border-radius: 12px;
+
+      margin: 15px 0;
+
+      width: 100%;
+
+      box-sizing: border-box;
+
+      text-align: left;
+    }
+
+
+    .bio-section h3 {
+
+      color: #4c1d95;
+
+      margin-top: 0;
+
+      font-size: 20px;
+    }
+
+
+    .bio-section p {
+
+      color: #444;
+
+      line-height: 1.6;
+
+      margin: 0;
+    }
+
+
+    /* =========================
+       CONTACT INFORMATION
+       ========================= */
+
+    .contact-info {
+
+      display: flex;
+
+      gap: 20px;
+
+      margin: 20px 0;
+
+      flex-wrap: wrap;
+
+      justify-content: center;
+    }
+
+
+    .contact-item {
+
+      background: #f3e8ff;
+
+      padding: 10px 15px;
+
+      border-radius: 8px;
+
+      color: #4c1d95;
+
+      font-size: 14px;
+    }
+
+
+    .contact-item i {
+
+      margin-right: 5px;
+    }
+
+
+    /* =========================
+       SOCIAL MEDIA
+       ========================= */
+
+    .social-links {
+
+      margin: 20px 0;
+    }
+
+
+    .social-links a {
+
+      text-decoration: none;
+
+      color: black;
+
+      font-size: 24px;
+
+      margin: 0 10px;
+
+      transition: all 0.3s ease;
+    }
+
+
+    .social-links a:hover {
+
+      color: #ff007f;
+
+      background-color: transparent;
+    }
+
+
+    /* =========================
+       FOOTER
+       ========================= */
+
+    footer {
+
+      text-align: center;
+
+      margin: 40px 0;
+
+      color: #666;
+    }
+
+
+    /* =========================
+       MOBILE
+       ========================= */
+
+    @media (max-width: 600px) {
+
+      ul {
+
+        justify-content: flex-start;
+
+        overflow-x: auto;
+      }
+
+
+      ul li a {
+
+        padding: 12px 10px;
+
+        font-size: 14px;
+      }
+
+
+      .logout {
+
+        position: static;
+      }
+
+
+      .detail-container {
+
+        margin: 20px auto;
+
+        padding: 10px;
+      }
+
+
+      .detail-card {
+
+        padding: 25px 15px;
+      }
+
+
+      .detail-img {
+
+        width: 140px;
+
+        height: 140px;
+      }
+
+
+      .detail-card h1 {
+
+        font-size: 26px;
+      }
+
+
+      .contact-info {
+
+        flex-direction: column;
+
+        align-items: center;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+  <!-- =========================
+       NAVIGATION BAR
+       ========================= -->
+
+  <ul>
+
+    <li>
+      <a href="index.html">Home</a>
+    </li>
+
+    <li>
+      <a href="#news">News</a>
+    </li>
+
+    <li>
+      <a href="index.html">CEOs & Founders</a>
+    </li>
+
+    <li>
+      <a href="#contact">Contact</a>
+    </li>
+
+    <li>
+      <a href="#about">About</a>
+    </li>
+
+    <li class="logout">
+      <a href="#" id="logoutBtn">Logout</a>
+    </li>
+
+  </ul>
+
+
+  <!-- =========================
+       CEO DETAIL
+       ========================= -->
+
+  <div class="detail-container">
+
+
+    <!-- BACK TO CEO PAGE -->
+
+    <a href="index.html" class="back-btn">
+
+      <i class="fa fa-arrow-left"></i>
+
+      Back to all CEOs
+
+    </a>
+
+
+    <!-- CEO DETAIL CARD -->
+
+    <div class="detail-card">
+
+
+      <!-- CEO IMAGE -->
+
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6OWPNXjjRfV0Akc6z6nB434n0ep7VIxV2HVSB8_LXjNYIucrP74tREKo&s=10"
+        alt="Satya Nadella"
+        class="detail-img"
+      />
+
+
+      <!-- CEO NAME -->
+
+      <h1>
+        Satya Nadella
+      </h1>
+
+
+      <!-- COMPANY -->
+
+      <p class="title">
+        CEO @ Microsoft
+      </p>
+
+
+      <!-- UNIVERSITY -->
+
+      <p class="university">
+        University of Wisconsin-Milwaukee
+      </p>
+
+
+      <!-- ABOUT -->
+
+      <div class="bio-section">
+
+        <h3>
+          About
+        </h3>
+
+        <p>
+          Satya Nadella is the executive chairman and CEO
+          of Microsoft, leading the company through a major
+          cloud-first and artificial intelligence transformation.
+          He has played a significant role in Microsoft's
+          development of cloud computing, enterprise technology,
+          and AI services.
+        </p>
+
+      </div>
+
+
+      <!-- CONTACT INFORMATION -->
+
+      <div class="contact-info">
+
+        <div class="contact-item">
+
+          <i class="fa fa-envelope"></i>
+
+          satya.nadella@microsoft.com
+
+        </div>
+
+
+        <div class="contact-item">
+
+          <i class="fa fa-phone"></i>
+
+          +1 (555) 019-2834
+
+        </div>
+
+      </div>
+
+
+      <!-- SOCIAL MEDIA -->
+
+      <div class="social-links">
+
+        <a href="#">
+
+          <i class="fa fa-dribbble"></i>
+
+        </a>
+
+
+        <a href="#">
+
+          <i class="fa fa-twitter"></i>
+
+        </a>
+
+
+        <a href="#">
+
+          <i class="fa fa-linkedin"></i>
+
+        </a>
+
+
+        <a href="#">
+
+          <i class="fa fa-facebook"></i>
+
+        </a>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+
+  <!-- =========================
+       FOOTER
+       ========================= -->
+
+  <footer>
+
+    <h4>
+      ~ Here's the footer ~
+    </h4>
+
+  </footer>
+
+
+</body>
+
+</html>
