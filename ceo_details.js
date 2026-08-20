@@ -9,7 +9,7 @@ fetch("ceos.json")
     const ceo = data[index];
 
     if (!ceo) {
-      document.body.innerHTML = "<h2>CEO not found</h2>";
+      document.getElementById("ceoName").textContent = "CEO not found";
       return;
     }
 
