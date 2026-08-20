@@ -2,22 +2,38 @@
     {
         "name1": "Jensen Huang",
         "company1": "CEO, Nvidia",
-        "university1": "Oregon State University"
+        "university1": "Oregon State University",
+        "image1": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6OWPNXjjRfV0Akc6z6nB434n0ep7VIxV2HVSB8_LXjNYIucrP74tREKo&s=10",
+        "bio1": "Jensen Huang is the founder and CEO of Nvidia.",
+        "email1": "jensen@example.com",
+        "phone1": "+1 (555) 111-1111"
     },
     {
         "name2": "Andy Jassy",
         "company2": "CEO, Amazon",
-        "university2": "Harward University"
+        "university2": "Harward University", 
+        "image2": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPZ9-_wyU3iZuuWsUArDeStdGilSPqM6Fj2MKvGVOEM3UiPgCav_JfTcs&s=10",
+        "bio2": "Andy Jassy is the CEO of Amazon.",
+        "email2": "andy@example.com",
+        "phone2": "+1 (555) 222-2222"
     },
     {
         "name3": "Sam Altman",
         "company3": "CEO, OpenAI",
-        "university3": "Stanford University"
+        "university3": "Stanford University", 
+        "image3": "https://assets.bizclikmedia.net/668/05659d67b129e72496889b970d608f04:cddd0b55886008c4d3c71a87f47cb19b/107196499-1676648872393-gettyimages-1127480489-new-work-summit.webp",
+        "bio3": "Sam Altman is the CEO of OpenAI.",
+        "email3": "sam@example.com",
+        "phone3": "+1 (555) 333-3333"
     },
     {
         "name4": "Doug McMillon",
         "company4": "CEO, Walmart",
-        "university4": "University of Arkansas"
+        "university4": "University of Arkansas",
+        "image4": "https://i.insider.com/5cbf7c6c2730ca37b6174921?width=700",
+        "bio4": "Doug McMillon is a business executive and former CEO of Walmart.",
+        "email4": "doug@example.com",
+        "phone4": "+1 (555) 444-4444"
     }
 ]
 
