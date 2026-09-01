@@ -559,6 +559,16 @@
 <script src="ceo_details.js"></script>
 <script src="footer.js"></script>
 
+  <script>
+document.getElementById("logoutBtn").addEventListener("click", function(e) {
+    e.preventDefault();
+
+    sessionStorage.removeItem("loggedIn");
+
+    window.location.replace("index.html");
+});
+</script>
+
 
 </body>
 </html>
