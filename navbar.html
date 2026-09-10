@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #7e22ce, #4c1d95);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+ul li a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-align: center;
+}
+
+li a:hover {
+    background-color: #00f5d4;
+    color: black;
+}
+
+button {
+    border: none;
+    outline: 0;
+    padding: 8px;
+    color: white;
+    background-color: #ff007f;
+    text-align: center;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: #00f5d4;
+    color: black;
+}
+
+button,
+a,
+li a {
+    transition: all 0.3s ease;
+}
+
+.logout {
+    position: absolute;
+    right: 20px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<ul>
+
+    <li><a href="#home">Home</a></li>
+
+    <li><a href="#news">News</a></li>
+
+    <li><a href="#contact">CEOs & Founders</a></li>
+
+    <li><a href="#about">Contact</a></li>
+
+    <li><a href="#about">About</a></li>
+
+    <li>
+        <a href="add_ceo.html">
+            <button>Add CEO</button>
+        </a>
+    </li>
+
+    <li class="logout">
+        <a href="#" id="logoutBtn">Logout</a>
+    </li>
+
+</ul>
+
+</body>
+</html>
