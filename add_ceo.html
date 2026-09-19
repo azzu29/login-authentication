@@ -1,42 +1,111 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Add CEO</title>
+
+    <style>
+        body {
+            background-color: #eaf7fa;
+            font-family: Arial, sans-serif;
+        }
+
+        .form-container {
+            width: 500px;
+            margin: 50px auto;
+            background-color: white;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .form-header {
+            background-color: #b52b22;
+            color: white;
+            padding: 20px;
+        }
+
+        .form-header h2 {
+            margin: 0;
+        }
+
+        form {
+            padding: 25px;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        textarea {
+            height: 100px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 25px;
+            background-color: #b52b22;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #8f211b;
+        }
+    </style>
 </head>
 
 <body>
 
     <div id="navbar-placeholder"></div>
 
-    
-    <h1>Add CEO</h1>
+    <div class="form-container">
 
-    <form>
+        <div class="form-header">
+            <h2>Add CEO</h2>
+        </div>
 
-        <label>Name:</label><br>
-        <input type="text" name="name"><br><br>
+        <form>
 
-        <label>Company Name:</label><br>
-        <input type="text" name="company"><br><br>
+            <label>Name:</label>
+            <input type="text" name="name" placeholder="Enter name">
 
-        <label>University:</label><br>
-        <input type="text" name="university"><br><br>
+            <label>Company Name:</label>
+            <input type="text" name="company" placeholder="Enter company name">
 
-        <label>About:</label><br>
-        <textarea name="about"></textarea><br><br>
+            <label>University Details:</label>
+            <input type="text" name="university" placeholder="Enter university details">
 
-        <label>Email:</label><br>
-        <input type="email" name="email"><br><br>
+            <label>About:</label>
+            <textarea name="about" placeholder="Enter about"></textarea>
 
-        <label>Phone Number:</label><br>
-        <input type="tel" name="phone"><br><br>
+            <label>Email:</label>
+            <input type="email" name="email" placeholder="Enter email">
 
-        <button type="submit">Submit</button>
+            <label>Phone Number:</label>
+            <input type="tel" name="phone" placeholder="Enter phone number">
 
-    </form>
+            <button type="submit">Submit</button>
 
-<script src="navbar.js"></script>
-        
+        </form>
+
+    </div>
+
+    <script src="navbar.js"></script>
+
 </body>
-  
-  </html>
+
+</html>
